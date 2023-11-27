@@ -1,0 +1,197 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    //Dev commands
+    //Flutter: Get pub packages
+    {
+      "label": "package: get new pub packages",
+      "type": "flutter",
+      "command": "flutter",
+      "args": ["pub", "get"],
+      "problemMatcher": []
+    },
+    //Flutter: Upgrade pub packages
+    {
+      "label": "package: upgrade current pub packages",
+      "type": "flutter",
+      "command": "flutter",
+      "args": ["pub", "upgrade"],
+      "problemMatcher": []
+    },
+    //Flutter: Clean previous build folders and packages
+    {
+      "label": "clean: previous build folders and packages",
+      "type": "flutter",
+      "command": "flutter",
+      "args": ["clean"],
+      "problemMatcher": []
+    },
+    //Dart: list all issues
+    {
+      "label": "dart: list all issues",
+      "type": "dart",
+      "command": "dart",
+      "args": ["fix", "--dry-run"],
+      "problemMatcher": []
+    },
+    //Dart: fix all issues
+    {
+      "label": "dart: fix all issues",
+      "type": "dart",
+      "command": "dart",
+      "args": ["fix", "--apply"],
+      "problemMatcher": []
+    },
+
+    //Build commands
+    //iOS: IPA
+    {
+      "label": "build: IPA development",
+      "type": "flutter",
+      "command": "flutter",
+      "args": [
+        "build",
+        "ipa",
+        "--flavor",
+        "development",
+        "-t",
+        "lib/main_development.dart"
+      ],
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "label": "build: IPA staging",
+      "type": "flutter",
+      "command": "flutter",
+      "args": [
+        "build",
+        "ipa",
+        "--flavor",
+        "staging",
+        "-t",
+        "lib/main_staging.dart"
+      ],
+      "problemMatcher": [],
+      "group": "build"
+    },
+    {
+      "label": "build: IPA production",
+      "type": "flutter",
+      "command": "flutter",
+      "args": [
+        "build",
+        "ipa",
+        "--flavor",
+        "production",
+        "-t",
+        "lib/main_production.dart"
+      ],
+      "problemMatcher": [],
+      "group": "build"
+    },
+
+    //Android: APK
+    {
+      "label": "build: APK development",
+      "type": "flutter",
+      "command": "flutter",
+      "args": [
+        "build",
+        "apk",
+        "--flavor",
+        "development",
+        "-t",
+        "lib/main_development.dart"
+      ],
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "label": "build: APK staging",
+      "type": "flutter",
+      "command": "flutter",
+      "args": [
+        "build",
+        "apk",
+        "--flavor",
+        "staging",
+        "-t",
+        "lib/main_staging.dart"
+      ],
+      "problemMatcher": [],
+      "group": "build"
+    },
+    {
+      "label": "build: APK production",
+      "type": "flutter",
+      "command": "flutter",
+      "args": [
+        "build",
+        "apk",
+        "--flavor",
+        "production",
+        "-t",
+        "lib/main_production.dart"
+      ],
+      "problemMatcher": [],
+      "group": "build"
+    },
+
+    //Android: AppBundle
+    {
+      "label": "build: AppBundle development",
+      "type": "flutter",
+      "command": "flutter",
+      "args": [
+        "build",
+        "appbundle",
+        "--flavor",
+        "development",
+        "-t",
+        "lib/main_development.dart"
+      ],
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "label": "build: AppBundle staging",
+      "type": "flutter",
+      "command": "flutter",
+      "args": [
+        "build",
+        "appbundle",
+        "--flavor",
+        "staging",
+        "-t",
+        "lib/main_staging.dart"
+      ],
+      "problemMatcher": [],
+      "group": "build"
+    },
+    {
+      "label": "build: AppBundle production",
+      "type": "flutter",
+      "command": "flutter",
+      "args": [
+        "build",
+        "appbundle",
+        "--flavor",
+        "production",
+        "-t",
+        "lib/main_production.dart"
+      ],
+      "problemMatcher": [],
+      "group": "build"
+    }
+  ]
+}
